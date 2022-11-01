@@ -1,13 +1,14 @@
-# 💼 Responsive Mini Portfolio
-## [Watch it on youtube](https://youtu.be/mq0xJxOTiYo)
-### 💼 Responsive Mini Portfolio
+# 💼 Responsive Portfolio
+## [Useed basic fundamental pl]
+### 💼 Responsive live Portfolio
 
-- Responsive mini portfolio website Using HTML CSS & JavaScript
+- Responsive portfolio website Using HTML CSS & JavaScript
 - Contains animations css.
+- Contains Downloading files
 - Includes a light and dark mode.
 - Developed first with the Mobile First methodology, then for desktop.
-- Compatible with all mobile devices and with a beautiful and pleasant user interface.
+- Compatible with all devices and with a beautiful and pleasant user interface.
 
-💙 Join the channel to see more videos like this. [Bedimcode](https://www.youtube.com/c/Bedimcode)
+💙 Spider 
 
-![preview img](/preview.png)
+!Do not use any image.
