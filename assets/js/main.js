@@ -71,7 +71,7 @@ const popupCloseButton = document.querySelector('.popup-close-button');
 
 // Check if today is February 21st
 const today = new Date();
-if (today.getMonth() === 1 && today.getDate() === 20) {
+if (today.getMonth() === 1 && today.getDate() === 21) {
   // Check if cookie is set
   if (getCookie('popupShown') === 'true') {
     popupBanner.style.display = 'none';
