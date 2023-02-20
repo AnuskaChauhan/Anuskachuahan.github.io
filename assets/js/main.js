@@ -64,3 +64,52 @@ sr.reveal(`.profile__info-group`, {interval: 100, delay: 700})
 sr.reveal(`.profile__buttons`, {delay: 800})
 sr.reveal(`.filters__content`, {delay: 900})
 sr.reveal(`.filters`, {delay: 1000})
+
+// ==============================CHECK BRITHDAY DAYS=======================
+const popupBanner = document.querySelector('.popup-banner');
+const popupCloseButton = document.querySelector('.popup-close-button');
+
+// Check if today is February 21st
+const today = new Date();
+if (today.getMonth() === 1 && today.getDate() === 21) {
+  // Check if cookie is set
+  if (getCookie('popupShown') === 'true') {
+    popupBanner.style.display = 'none';
+  } else {
+    popupBanner.style.display = 'block';
+  }
+} else {
+  popupBanner.style.display = 'none';
+}
+
+// Set cookie and close popup when close button is clicked
+popupCloseButton.addEventListener('click', function() {
+  setCookie('popupShown', 'true', 7);
+  popupBanner.style.display = 'none';
+});
+
+// Functions for getting and setting cookies
+function setCookie(name, value, days) {
+  let expires = '';
+  if (days) {
+    const date = new Date();
+    date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+    expires = '; expires=' + date.toUTCString();
+  }
+  document.cookie = name + '=' + (value || '')  + expires + '; path=/';
+}
+
+function getCookie(name) {
+  const nameEQ = name + '=';
+  const ca = document.cookie.split(';');
+  for (let i = 0; i < ca.length; i++) {
+    let c = ca[i];
+    while (c.charAt(0) == ' ') {
+      c = c.substring(1);
+    }
+    if (c.indexOf(nameEQ) == 0) {
+      return c.substring(nameEQ.length, c.length);
+    }
+  }
+  return null;
+}
