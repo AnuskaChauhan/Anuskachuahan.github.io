@@ -748,3 +748,11 @@ body.dark-theme {
   left: 90%;
   animation-delay: 1.8s;
 }
+/* =======================================3D rendering ================================================ */
+.popup-content h1 {
+  color: blue;
+}
+.popup-content h1 {
+  color: blue;
+  text-shadow: 1px 1px 0px #fff, 2px 2px 0px #fff, 3px 3px 0px #fff, 4px 4px 0px #fff, 5px 5px 0px #fff, 6px 6px 0px #fff, 7px 7px 0px #fff, 8px 8px 7px rgba(0,0,0,0.3);
+}
